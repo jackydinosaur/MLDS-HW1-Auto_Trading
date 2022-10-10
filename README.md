@@ -34,7 +34,18 @@ python profit_calculator.py  ./testing_data.csv  ./output.csv
 
 ### Trading Algorithm
 **Gold:Maximize the profit.**
-1.
+
+1.Set the variable "position" to make sure the position must be 1,0 or -1 in any time.
+
+2.For maximum benefit, sell the stock only if the model predicts the stock price will fall back tomorrow during the up phase.
+
+3.Conversely, only buy if it predicts a drop tomorrow.
+
+| Position | 1| 0| -1|
+|---|:---:|:---:|:---:|
+|go up|hold|buy|buy|
+|go down|sell|buy|hold|
+|unchanged|hold|sell|hold|
 
 ### Result
 | Algorithm | LogisticRegression| SVC| LinearSVC|
