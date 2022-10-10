@@ -12,7 +12,6 @@ Please install related libraries before running this code:
 pip install -r requirements.txt
 ```
 
-
 ## Data Preparation
 Put the training_data and testing_data in ./. It should look like:
  ```
@@ -32,3 +31,15 @@ python trader.py --training training_data.csv -- testing testing_data.csv --outp
 # python profit_calculator.py [-h] stock action
 python profit_calculator.py  ./testing_data.csv  ./output.csv
 ```
+
+### Trading Algorithm
+**Gold:Maximize the profit.**
+1.
+
+### Result
+| Algorithm | LogisticRegression| SVC| LinearSVC|
+|---|:---:|:---:|:---:|
+|**My**|**2.04**|**3.05**|**3.00**|
+|Buy and hold|-0.8|-0.8|-0.8|
+|Sell and hold|0.8|0.8|0.8|
+
